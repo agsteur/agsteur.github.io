@@ -1,0 +1,21 @@
+{
+  "name": "pr3",
+  "homepage": "https://agsteur.github.io/pr3.github.io",
+  "version": "1.0.0",
+  "description": "tercera preentrega con scss incluido",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass --include-path scss scss/main.scss css/nuevomain.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+  },
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "node-sass": "^7.0.3",
+    "nodemon": "^2.0.20"
+  },
+  "dependencies": {
+    "gh-pages": "^4.0.0"
+  }
+}
